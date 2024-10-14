@@ -28,4 +28,10 @@ for step in $steps; do
   i=$(expr $i + 1 )
 done
 
-gnuplot -p -e "plot 'data.txt' using 1:2 with linespoints"
+gnuplot -p -e "
+    set title 'Collatz Conjecture Sequence';
+    set xlabel 'Steps';
+    set ylabel 'Number';
+    set grid;
+    set key off;
+    plot 'data.txt' using 1:2 with linespoints linewidth 2 pointtype 7 pointsize 1.5"
