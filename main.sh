@@ -11,7 +11,7 @@ the_eqn() {
   steps="$steps $num"
 }
 
-rm data.txt
+rm data.txt || printf "%s\n" "data.txt is not present"
 
 printf "%s" "Enter a number: " && read -r num
 
