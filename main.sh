@@ -34,4 +34,4 @@ gnuplot -p -e "
     set ylabel 'Number';
     set grid;
     set key off;
-    plot 'data.txt' using 1:2 with linespoints linewidth 2 pointtype 7 pointsize 1.5"
+    plot 'data.txt' using 1:2 with linespoints linewidth 2 pointtype 7 pointsize 0.8"
