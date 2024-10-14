@@ -27,3 +27,5 @@ for step in $steps; do
   echo "$i $step" >> data.txt
   i=$(expr $i + 1 )
 done
+
+./plot.py
