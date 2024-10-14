@@ -1,3 +1,7 @@
 # 3x+1 visualizer
 
-![](./shot_241014_18-50-39.png)
+![graph](./shot_241014_20-02-33.png)
+
+## Dependency
+
+- [Gnuplot](http://www.gnuplot.info/)

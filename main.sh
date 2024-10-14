@@ -11,6 +11,8 @@ the_eqn() {
   steps="$steps $num"
 }
 
+rm data.txt
+
 printf "%s" "Enter a number: " && read -r num
 
 while [ $num != 1 ]; do
@@ -18,6 +20,8 @@ while [ $num != 1 ]; do
 done
 
 printf "%s\n" "Sequence: $steps"
+
+i=0
 
 for step in $steps; do
   echo "$i $step" >> data.txt
