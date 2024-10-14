@@ -28,4 +28,4 @@ for step in $steps; do
   i=$(expr $i + 1 )
 done
 
-./plot.py
+gnuplot -p -e "plot 'data.txt' using 1:2 with linespoints"
